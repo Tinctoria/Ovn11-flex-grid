@@ -1,0 +1,52 @@
+.main-container{
+    margin-top: 2rem;
+    background-color: var(--primary-bg);
+    padding:5px;
+}
+
+.grid-container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container{
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(3, 60px);
+    grid-template-columns: repeat(7, 50px);
+    grid-gap: 5px;
+}
+
+.gheader{
+    background-color: var( --item-bg1);
+    animation: bg 2s infinite alternate; 
+    grid-row: span 1;
+    grid-column: span 7;
+}
+.gmenu{
+    background-color: var( --item-bg2);
+    animation: bg 2s infinite alternate; 
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.gmain{
+    background-color: var( --item-bg3);
+    animation: bg 2s infinite alternate; 
+    grid-row: span 1;
+    grid-column: span 3;
+}
+
+.gright{
+    background-color: var( --item-bg4);
+    animation: bg 2s infinite alternate; 
+    grid-row: span 1;
+    grid-column: span 2;
+}
+.gfooter{
+    background-color: var( --item-bg5);
+    animation: bg 2s infinite alternate; 
+    grid-row: span 1;
+    grid-column: span 5;
+}

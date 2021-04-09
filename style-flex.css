@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    font-size: 18px;
+}
+
+@keyframes bg{
+    from {
+        background-color: var(inherit);
+    }
+    to {background-color: var(--primary-bg);
+    }
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.all-content {
+    width: 400px;
+    height: 180px;
+    background-color: var(--primary-bg);
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    height: 50px;
+    margin: 5px;
+    background-color: var( --item-bg1);
+    animation: bg 2s infinite alternate; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    flex: 1; 
+    flex-grow: 1;
+    display: flex;
+}
+.section-left{
+    flex:1;
+    flex-grow: 1;
+    margin:5px;
+    margin-top: 0px;
+    background-color: var( --item-bg2);
+    animation: bg 2s infinite alternate; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-right{
+    flex:3;
+    display: flex;
+    flex-direction: column;
+}
+.split {
+    flex:1;
+    display: flex;
+    flex-direction: row;
+}
+.main, .right { 
+    margin-right:5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    background-color: var( --item-bg3);
+    animation: bg 2s infinite alternate; 
+    flex:3; 
+}
+.right{
+    background-color: var( --item-bg4);
+    animation: bg 2s infinite alternate; 
+    flex:2;
+}
+.footer {
+    flex: 1;
+    margin-right:5px;
+    margin-bottom: 5px;
+    background-color: var(--item-bg5);
+    animation: bg 2s infinite alternate; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
